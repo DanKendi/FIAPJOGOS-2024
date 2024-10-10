@@ -1,0 +1,20 @@
+body{
+    background-color: #ffe4c4;
+}
+
+/* Estilo para o cabeçalho */
+header{
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Podemos trabalhar com classes no css usando o exemplo: .nomeClasse{} */
+.experiencia{
+    background-color: #FFFFFF;
+}
+.experiencia h2{
+    text-align: center;
+    font-size: 32px;
+}
+/* Também é possível trabalhar com id como: #nomeId{} */
