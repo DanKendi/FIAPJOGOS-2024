@@ -38,46 +38,75 @@
 
         <!-- Card com experiências -->
         <section class="experiencia">
-            <div class="card-grid">
-
+            <div class="container">
                 <h2>Nossas Experiências</h2>
-                <div id="card-01" class="card">
-                    <div class="card-content">
-                        <img src="img/Jogo01.png" alt="Imagem sala jogo 01">
-                        <h3>Sala jogo 01</h3>
-                        <p>Uma sala emocinante cheia de misterios a serem resolvidos. Prepare-se para um desafio
-                            inesquecível.</p>
+                <div class="card-grid">
+                    <div id="card-01" class="card">
+                        <div class="card-content">
+                            <img src="img/Jogo01.png" alt="Imagem sala jogo 01">
+                            <h3>Sala jogo 01</h3>
+                            <p>Uma sala emocionante cheia de mistérios a serem resolvidos. Prepare-se para um desafio
+                                inesquecível.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div id="card-02" class="card">
-                    <div class="card-content">
-                        <img src="img/Jogo02.jpg" alt="Imagem sala jogo 02">
-                        <h3>Sala jogo 02</h3>
-                        <p>Uma sala emocinante cheia de misterios a serem resolvidos. Prepare-se para um desafio
-                            inesquecível.</p>
+                    <div id="card-02" class="card">
+                        <div class="card-content">
+                            <img src="img/Jogo02.jpg" alt="Imagem sala jogo 02">
+                            <h3>Sala jogo 02</h3>
+                            <p>Uma sala emocionante cheia de mistérios a serem resolvidos. Prepare-se para um desafio
+                                inesquecível.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div id="card-03" class="card">
-                    <div class="card-content">
-                        <img src="img/Jogo03.jpg" alt="Imagem sala jogo 03">
-                        <h3>Sala jogo 03</h3>
-                        <p>Uma sala emocinante cheia de misterios a serem resolvidos. Prepare-se para um desafio
-                            inesquecível.</p>
-                    </div>
-                </div>
-
-            </div>
+                    <div id="card-03" class="card">
+                        <div class="card-content">
+                            <img src="img/Jogo03.jpg" alt="Imagem sala jogo 03">
+                            <h3>Sala jogo 03</h3>
+                            <p>Uma sala emocionante cheia de mistérios a serem resolvidos. Prepare-se para um desafio
+                                inesquecível.</p>
+                        </div> <!-- div card-content -->
+                    </div> <!-- div card-03 -->
+                </div> <!-- div card-grid -->
+            </div> <!-- div container -->
         </section>
     </main>
 
     <!-- Footer com contatos -->
     <footer>
         <div>
-            <p>2024 - Jogos FIAP. Todos os direitos reservados.</p>
+            <p>2024 - Jogos FIAP. Todos os direitos reservados &copy;.</p>
         </div>
     </footer>
+
+    <!-- MODAL PARA FORMULÁRIO DE CONTATO -->
+
+
+    <div id="contatoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">x</span>
+            <h2>Entre em contato</h2>
+            <form>
+                <label for="inputName">Nome:</label>
+                <input type="text" id="inputName" name="name" required>
+                <label for="inputEmail">Email:</label>
+                <input type="email" id="inputEmail" name="email" required>
+                <label for="inputTel">Telefone:</label>
+                <input type="tel" id="inputTel" name="tel" required>
+                <button type="submit" class="btn">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var modal = document.getElementById('contatoModal');
+            modal.style.display = 'block';
+            document.querySelector('.close-btn').onclick = function () {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+
 
 </body>
 
