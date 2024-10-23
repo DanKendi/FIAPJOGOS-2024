@@ -101,6 +101,8 @@
         window.onload = function () {
             var modal = document.getElementById('contatoModal');
             modal.style.display = 'block';
+            // caso queria deixar o modal no centro da tela é necessário trocar o display para "flex" e
+            // adicionar no css "align-itens : center" e "justify-content: center"
             document.querySelector('.close-btn').onclick = function () {
                 modal.style.display = 'none';
             }

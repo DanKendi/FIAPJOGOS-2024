@@ -1,220 +1,242 @@
-/* Reseta alguns estilos padrão */
-*{
-    margin: 0;
+/* Seleciona todos os elementos e remove o espaçamento e preenchimento padrão, 
+   além de garantir que o box-sizing seja 'border-box' para incluir bordas e padding no cálculo do tamanho */
+   *{
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-
+    
+/* Estilos gerais do body (cor de fundo, tipo de fonte e cor do texto) */
 body{
-    background-color: #ffe4c4;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    background-color: bisque; /* Define a cor de fundo como bisque */
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes */
+    color: #333; /* Define a cor do texto como cinza escuro */
 }
-
+    
+/* Estilo para o container principal da página */
 .container{
-    width: 100%;
-    margin: 0 auto; /* centralizando o conteúdo horizontalmente */
-    background-color: bisque;
+    width: 100%; /* Faz com que o container ocupe toda a largura disponível */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
 }
 
 /* Estilo para o cabeçalho */
 header{
-    background-color: #333;
-    color: #ffffff;
-    padding: 20px;
+    background-color: #333; /* Cor de fundo do cabeçalho (preto) */
+    color: white; /* Cor do texto no cabeçalho */
+    padding: 20px; /* Espaçamento interno de 20px em todas as direções */
 }
-
-/* Estilo para o menu */
+    
 header h1{
-    text-align: center;
-    font-size: 36px;
+    text-align: center; /* Centraliza o título do cabeçalho */
+    font-size: 36px; /* Define o tamanho da fonte do título */
 }
 
+/* Estilo para o menu de navegação dentro do cabeçalho */
 header nav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 15px;
+    display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens de navegação */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 15px; /* Adiciona preenchimento ao redor da lista */
 }
-
+    
 header nav li{
-    margin: 15px;
+    margin: 15px; /* Adiciona margem ao redor de cada item de navegação */
 }
-
+    
+/* Estilo para os links de navegação */
 header nav ul li a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #ffffff;
+    color: white; /* Define a cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-size: 18px; /* Define o tamanho da fonte dos links */
 }
 
-header nav ul li a:hover{
-    text-decoration: underline;
-    color: bisque;
+/* Efeito de hover (quando o mouse passa por cima) nos links de navegação */
+header nav li a:hover{
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+    color: bisque; /* Muda a cor do texto para bisque */
 }
-
-/* Estilo para o banner */
-
-.banner{
-    background: url(../img/banner01.png) no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    opacity: 0.8;
-}
-
-.banner h2{
-    font-size: 48px;
-    margin: 20px;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Contorno preto */;
-}
-
-.banner p{
-    font-size: 20px;
-    margin: 25px;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Contorno preto */
-}
-
-.banner a{
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Contorno preto */
-}
-
-.banner .btn{
-    background-color: #ff6347;
-    color: white;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-/* Podemos trabalhar com classes no css usando o exemplo: .nomeClasse{} */
+    
+/* Estilo para a seção de experiência */
 .experiencia{
-    background-color: #FFFFFF;
+    background-color: white; /* Cor de fundo branca para a seção de experiência */
 }
+
+/* Estilo para o banner da página */
+.banner{
+    background: url(../IMG/banner02.png) no-repeat center center/cover; /* Define uma imagem de fundo, centraliza e cobre o banner */
+    height: 400px; /* Define a altura do banner */
+    display: flex; /* Usa flexbox para alinhar os elementos no centro */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    text-align: center; /* Centraliza o texto */
+}
+    
+/* Estilo para o título dentro do banner */
+.banner h2{
+    font-size: 48px; /* Define o tamanho da fonte do título */
+    color: white; /* Define a cor do texto como branco */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Adiciona uma sombra preta ao texto */
+}
+    
+/* Estilo para o parágrafo dentro do banner */
+.banner p{
+    font-size: 20px; /* Define o tamanho da fonte do parágrafo */
+    color: white; /* Define a cor do texto como branco */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Adiciona uma sombra preta ao texto */
+}
+
+/* Estilo para o botão no banner */
+.banner .btn{
+    background-color: #ff6347; /* Define a cor de fundo do botão (tomate) */
+    color: white; /* Define a cor do texto do botão como branco */
+    padding: 20px; /* Adiciona espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 18px; /* Define o tamanho da fonte */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+}
+
+/* Efeito de hover no botão do banner */
+.banner .btn:hover{
+    background-color: #e5533d; /* Muda a cor de fundo para um tom mais escuro ao passar o mouse */
+}
+
+/* Estilo para os links dentro do banner */
+.banner a{
+    color: white; /* Define a cor do texto como branco */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Adiciona uma sombra preta ao texto */
+}
+
+/* Estilo para os títulos dentro da seção de experiência */
 .experiencia h2{
-    text-align: center;
-    font-size: 32px;
+    text-align: center; /* Centraliza o título */
+    font-size: 36px; /* Define o tamanho da fonte do título */
 }
-/* Também é possível trabalhar com id como: #nomeId{} */
 
+/* Estilo para o layout de cartões na seção de experiência */
 .card-grid{
-    display: flex;
-    justify-content: center;
+    display: flex; /* Usa flexbox para alinhar os cartões */
+    justify-content: center; /* Centraliza os cartões */
 }
 
+/* Estilo para os cartões de experiência */
 .card{
-    background-color: bisque;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 300px;
-    box-shadow: #333;
+    background-color: bisque; /* Cor de fundo do cartão */
+    border: 1px solid #ddd; /* Adiciona uma borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 300px; /* Define a largura do cartão */
+    box-shadow: #333; /* Adiciona uma sombra */
 }
 
+/* Efeito de hover nos cartões */
 .card:hover{
-    /* Aumenta o tamnho do card em 10% ao passar o mouse */
-    transform: scale(1.10);
+    transform: scale(1.10); /* Aumenta o tamanho do cartão em 10% quando o mouse passa por cima */
 }
 
+/* Estilo para as imagens dentro dos cartões */
 .card img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 100%; /* Faz a imagem ocupar toda a largura do cartão */
+    height: 200px; /* Define a altura da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorções */
 }
 
+/* Estilo para o conteúdo dentro dos cartões */
 .card-content{
-    padding: 20px;
+    padding: 20px; /* Adiciona espaçamento interno no conteúdo */
 }
 
+/* Estilo para os títulos dentro dos cartões */
 .card h3{
-    font-size: 24px;
-    margin: 10px;
-    color: #333;
+    font-size: 24px; /* Define o tamanho da fonte do título */
+    margin: 10px; /* Adiciona margem ao redor do título */
+    color: #333; /* Cor do título */
 }
 
+/* Estilo para os parágrafos dentro dos cartões */
 .card p{
-    font-size: 16px;
-    color: #666;
+    font-size: 16px; /* Define o tamanho da fonte do parágrafo */
+    color: #666; /* Define a cor do texto como cinza claro */
 }
 
-
+/* Estilos para o rodapé */
 footer{
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px;
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto no rodapé */
+    padding: 20px; /* Espaçamento interno no rodapé */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 50px; /* Adiciona uma margem no topo do rodapé */
 }
-
+    
 footer p{
-    font-size: 24px;
+    font-size: 24px; /* Define o tamanho da fonte do texto no rodapé */
 }
 
+/* Estilo para o modal */
 .modal{
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed; /* fixa o modal na tela */
-    z-index: 1; /* garante que o modal esteja sobre toda a tela */
-    top: 0;
-    /*  */
-    background-color: rgba(0, 0, 0, 0.8);
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    width: 100%; /* Faz o modal ocupar toda a largura da tela */
+    height: 100%; /* Faz o modal ocupar toda a altura da tela */
+    position: fixed; /* Mantém o modal fixo na tela */
+    z-index: 1; /* Define a sobreposição do modal */
+    top: 0; /* Posiciona o modal no topo da tela */
+    background-color: rgba(0,0,0, 0.85); /* Fundo preto semi-transparente */
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+    justify-content: center; /* Alinha horizontalmente o conteúdo ao centro */
 }
 
+/* Estilo para o botão de fechar o modal */
 .close-btn{
-    color: #333;
-    float: right;
-    font-size: 28px;
-    cursor: pointer;
+    color: #000; /* Define a cor do texto como preto */
+    float: right; /* Posiciona o botão à direita */
+    font-size:28px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
+/* Efeito de hover no botão de fechar o modal */
 .close-btn:hover{
-    color: red;
+    color:red; /* Muda a cor para vermelho ao passar o mouse */
 }
 
-.modal-content{
-    background-color: bisque;
-
-    /* Centraliza o conteudo horizontalmente */
-    margin: 0 auto;
-
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-}
-
+/* Estilo para o formulário dentro do modal */
 .modal form{
-    display: flex;   
-    flex-direction: column;
+    display: flex; /* Usa flexbox para organizar o formulário */
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+/* Estilo para o conteúdo do modal */
+.modal-content{
+    background-color: bisque; /* Cor de fundo do modal */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    max-width: 400px; /* Largura máxima de 400px */
+    position: relative; /* Permite o uso de posicionamento absoluto dentro do modal */
 }
 
+/* Estilo para os rótulos dos inputs no formulário */
 .modal form label{
-    margin: 10px;    
-    font-size: 16px;
+    margin: 10px; /* Adiciona margem ao redor dos rótulos */
+    font-size: 16px; /* Define o tamanho da fonte dos rótulos */
 }
 
+/* Estilo para os campos de entrada do formulário */
 .modal form input{
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 10px; /* Adiciona preenchimento dentro dos campos */
+    margin: 5px; /* Adiciona margem ao redor dos campos */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
+/* Estilo para o botão dentro do formulário */
 .modal form .btn{
-    background-color: #ff6347;
-    color: white;
-    border: none;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #ff6347; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    margin: 10px; /* Adiciona margem ao redor do botão */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
+/* Efeito de hover no botão do formulário */
 .modal form .btn:hover{
-    background-color: #e4433d;
+    background-color: #e5533d; /* Muda a cor de fundo ao passar o mouse */
 }
